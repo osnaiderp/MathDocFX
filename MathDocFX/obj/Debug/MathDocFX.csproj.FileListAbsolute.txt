@@ -1,0 +1,6 @@
+C:\Users\Osnaider\source\repos\MathDocFX\MathDocFX\bin\Debug\MathDocFX.dll
+C:\Users\Osnaider\source\repos\MathDocFX\MathDocFX\bin\Debug\MathDocFX.pdb
+C:\Users\Osnaider\source\repos\MathDocFX\MathDocFX\obj\Debug\MathDocFX.csproj.AssemblyReference.cache
+C:\Users\Osnaider\source\repos\MathDocFX\MathDocFX\obj\Debug\MathDocFX.csproj.CoreCompileInputs.cache
+C:\Users\Osnaider\source\repos\MathDocFX\MathDocFX\obj\Debug\MathDocFX.dll
+C:\Users\Osnaider\source\repos\MathDocFX\MathDocFX\obj\Debug\MathDocFX.pdb

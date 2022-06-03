@@ -1,0 +1,68 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "*.csproj"
+          ],
+          "cwd": ".",
+          "exclude": [
+            "**/obj/**",
+            "**/bin/**",
+            "doc/**"
+          ]
+        }
+      ],
+      "dest": "obj/api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "api/**.yml"
+        ],
+        "cwd": "obj"
+      },
+      {
+        "files": [
+          "api/*.md",
+          "articles/**.md",
+          "toc.yml",
+          "*.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "doc/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ],
+        "exclude": [
+          "obj/**",
+          "doc/**"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "doc/**"
+        ]
+      }
+    ],
+    "dest": "doc",
+    "template": [
+      "default"
+    ]
+  }
+}

@@ -1,0 +1,840 @@
+### YamlMime:ManagedReference
+items:
+- uid: MathDocFX.Math
+  commentId: T:MathDocFX.Math
+  id: Math
+  parent: MathDocFX
+  children:
+  - MathDocFX.Math.Add(System.Double,System.Double)
+  - MathDocFX.Math.Add(System.Int32,System.Int32)
+  - MathDocFX.Math.Divide(System.Double,System.Double)
+  - MathDocFX.Math.Divide(System.Int32,System.Int32)
+  - MathDocFX.Math.Multiply(System.Double,System.Double)
+  - MathDocFX.Math.Multiply(System.Int32,System.Int32)
+  - MathDocFX.Math.Subtract(System.Double,System.Double)
+  - MathDocFX.Math.Subtract(System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: Math
+  nameWithType: Math
+  fullName: MathDocFX.Math
+  type: Class
+  source:
+    id: Math
+    path: C:\Users\Osnaider\source\repos\MathDocFX\MathDocFX\Math.cs
+    startLine: 43
+  assemblies:
+  - MathDocFX
+  namespace: MathDocFX
+  summary: "\nLa clase  princiapal <code>Math</code>.\nContains all methods for performing basic math functions.\n<ul><li>AddAddition Operation</li><li>SubtractSubtraction Operation</li><li>MultiplyMultiplication Operation</li><li>DivideDivision Operation</li></ul>\n"
+  remarks: "\n<p>\nThis class can add, subtract, multiply and divide.\n</p>\n<p>\nThese operations can be performed on both\nintegers and doubles.\n</p>\n"
+  example: []
+  syntax:
+    content: public class Math
+    content.vb: Public Class Math
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MathDocFX.Math.Add(System.Int32,System.Int32)
+  commentId: M:MathDocFX.Math.Add(System.Int32,System.Int32)
+  id: Add(System.Int32,System.Int32)
+  parent: MathDocFX.Math
+  langs:
+  - csharp
+  - vb
+  name: Add(Int32, Int32)
+  nameWithType: Math.Add(Int32, Int32)
+  fullName: MathDocFX.Math.Add(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: Add
+    path: C:\Users\Osnaider\source\repos\MathDocFX\MathDocFX\Math.cs
+    startLine: 72
+  assemblies:
+  - MathDocFX
+  namespace: MathDocFX
+  summary: "\nAdds two integers <code data-dev-comment-type=\"paramref\" class=\"paramref\">a</code> and <code data-dev-comment-type=\"paramref\" class=\"paramref\">b</code>\nand returns the result.\n"
+  example:
+  - "\n<pre><code>int c = Math.Add(4, 5);\nif (c > 10)\n{\n    Console.WriteLine(c);\n}</code></pre>\n"
+  syntax:
+    content: public static int Add(int a, int b)
+    parameters:
+    - id: a
+      type: System.Int32
+      description: An integer.
+    - id: b
+      type: System.Int32
+      description: An integer.
+    return:
+      type: System.Int32
+      description: "\nThe sum of two integers.\n"
+    content.vb: Public Shared Function Add(a As Integer, b As Integer) As Integer
+  overload: MathDocFX.Math.Add*
+  exceptions:
+  - type: System.OverflowException
+    commentId: T:System.OverflowException
+    description: "\nThrown when one parameter is <xref href=\"System.Int32.MaxValue\" data-throw-if-not-resolved=\"false\"></xref> and the other\nis greater than 0.\n"
+  seealso:
+  - linkId: MathDocFX.Math.Subtract(System.Int32,System.Int32)
+    commentId: M:MathDocFX.Math.Subtract(System.Int32,System.Int32)
+  - linkId: MathDocFX.Math.Multiply(System.Int32,System.Int32)
+    commentId: M:MathDocFX.Math.Multiply(System.Int32,System.Int32)
+  - linkId: MathDocFX.Math.Divide(System.Int32,System.Int32)
+    commentId: M:MathDocFX.Math.Divide(System.Int32,System.Int32)
+  see:
+  - linkId: MathDocFX.Math.Add(System.Double,System.Double)
+    commentId: M:MathDocFX.Math.Add(System.Double,System.Double)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MathDocFX.Math.Add(System.Double,System.Double)
+  commentId: M:MathDocFX.Math.Add(System.Double,System.Double)
+  id: Add(System.Double,System.Double)
+  parent: MathDocFX.Math
+  langs:
+  - csharp
+  - vb
+  name: Add(Double, Double)
+  nameWithType: Math.Add(Double, Double)
+  fullName: MathDocFX.Math.Add(System.Double, System.Double)
+  type: Method
+  source:
+    id: Add
+    path: C:\Users\Osnaider\source\repos\MathDocFX\MathDocFX\Math.cs
+    startLine: 110
+  assemblies:
+  - MathDocFX
+  namespace: MathDocFX
+  summary: "\nAdds two doubles <code data-dev-comment-type=\"paramref\" class=\"paramref\">a</code> and <code data-dev-comment-type=\"paramref\" class=\"paramref\">b</code>\nand returns the result.\n"
+  example:
+  - "\n<pre><code>double c = Math.Add(4.5, 5.4);\nif (c > 10)\n{\n    Console.WriteLine(c);\n}</code></pre>\n"
+  syntax:
+    content: public static double Add(double a, double b)
+    parameters:
+    - id: a
+      type: System.Double
+      description: A double precision number.
+    - id: b
+      type: System.Double
+      description: A double precision number.
+    return:
+      type: System.Double
+      description: "\nThe sum of two doubles.\n"
+    content.vb: Public Shared Function Add(a As Double, b As Double) As Double
+  overload: MathDocFX.Math.Add*
+  exceptions:
+  - type: System.OverflowException
+    commentId: T:System.OverflowException
+    description: "\nThrown when one parameter is max and the other\nis greater than 0."
+  seealso:
+  - linkId: MathDocFX.Math.Subtract(System.Double,System.Double)
+    commentId: M:MathDocFX.Math.Subtract(System.Double,System.Double)
+  - linkId: MathDocFX.Math.Multiply(System.Double,System.Double)
+    commentId: M:MathDocFX.Math.Multiply(System.Double,System.Double)
+  - linkId: MathDocFX.Math.Divide(System.Double,System.Double)
+    commentId: M:MathDocFX.Math.Divide(System.Double,System.Double)
+  see:
+  - linkId: MathDocFX.Math.Add(System.Int32,System.Int32)
+    commentId: M:MathDocFX.Math.Add(System.Int32,System.Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MathDocFX.Math.Subtract(System.Int32,System.Int32)
+  commentId: M:MathDocFX.Math.Subtract(System.Int32,System.Int32)
+  id: Subtract(System.Int32,System.Int32)
+  parent: MathDocFX.Math
+  langs:
+  - csharp
+  - vb
+  name: Subtract(Int32, Int32)
+  nameWithType: Math.Subtract(Int32, Int32)
+  fullName: MathDocFX.Math.Subtract(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: Subtract
+    path: C:\Users\Osnaider\source\repos\MathDocFX\MathDocFX\Math.cs
+    startLine: 146
+  assemblies:
+  - MathDocFX
+  namespace: MathDocFX
+  summary: "\nSubtracts <code data-dev-comment-type=\"paramref\" class=\"paramref\">b</code> from <code data-dev-comment-type=\"paramref\" class=\"paramref\">a</code>\nand returns the result.\n"
+  example:
+  - "\n<pre><code>int c = Math.Subtract(4, 5);\nif (c > 1)\n{\n    Console.WriteLine(c);\n}</code></pre>\n"
+  syntax:
+    content: public static int Subtract(int a, int b)
+    parameters:
+    - id: a
+      type: System.Int32
+      description: An integer.
+    - id: b
+      type: System.Int32
+      description: An integer.
+    return:
+      type: System.Int32
+      description: "\nThe difference between two integers.\n"
+    content.vb: Public Shared Function Subtract(a As Integer, b As Integer) As Integer
+  overload: MathDocFX.Math.Subtract*
+  seealso:
+  - linkId: MathDocFX.Math.Add(System.Int32,System.Int32)
+    commentId: M:MathDocFX.Math.Add(System.Int32,System.Int32)
+  - linkId: MathDocFX.Math.Multiply(System.Int32,System.Int32)
+    commentId: M:MathDocFX.Math.Multiply(System.Int32,System.Int32)
+  - linkId: MathDocFX.Math.Divide(System.Int32,System.Int32)
+    commentId: M:MathDocFX.Math.Divide(System.Int32,System.Int32)
+  see:
+  - linkId: MathDocFX.Math.Subtract(System.Double,System.Double)
+    commentId: M:MathDocFX.Math.Subtract(System.Double,System.Double)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MathDocFX.Math.Subtract(System.Double,System.Double)
+  commentId: M:MathDocFX.Math.Subtract(System.Double,System.Double)
+  id: Subtract(System.Double,System.Double)
+  parent: MathDocFX.Math
+  langs:
+  - csharp
+  - vb
+  name: Subtract(Double, Double)
+  nameWithType: Math.Subtract(Double, Double)
+  fullName: MathDocFX.Math.Subtract(System.Double, System.Double)
+  type: Method
+  source:
+    id: Subtract
+    path: C:\Users\Osnaider\source\repos\MathDocFX\MathDocFX\Math.cs
+    startLine: 174
+  assemblies:
+  - MathDocFX
+  namespace: MathDocFX
+  summary: "\nSubtracts a double <code data-dev-comment-type=\"paramref\" class=\"paramref\">b</code> from another \ndouble <code data-dev-comment-type=\"paramref\" class=\"paramref\">a</code> and returns the result.\n"
+  example:
+  - "\n<pre><code>double c = Math.Subtract(4.5, 5.4);\nif (c > 1)\n{\n    Console.WriteLine(c);\n}</code></pre>\n"
+  syntax:
+    content: public static double Subtract(double a, double b)
+    parameters:
+    - id: a
+      type: System.Double
+      description: A double precision number.
+    - id: b
+      type: System.Double
+      description: A double precision number.
+    return:
+      type: System.Double
+      description: "\nThe difference between two doubles.\n"
+    content.vb: Public Shared Function Subtract(a As Double, b As Double) As Double
+  overload: MathDocFX.Math.Subtract*
+  seealso:
+  - linkId: MathDocFX.Math.Add(System.Double,System.Double)
+    commentId: M:MathDocFX.Math.Add(System.Double,System.Double)
+  - linkId: MathDocFX.Math.Multiply(System.Double,System.Double)
+    commentId: M:MathDocFX.Math.Multiply(System.Double,System.Double)
+  - linkId: MathDocFX.Math.Divide(System.Double,System.Double)
+    commentId: M:MathDocFX.Math.Divide(System.Double,System.Double)
+  see:
+  - linkId: MathDocFX.Math.Subtract(System.Int32,System.Int32)
+    commentId: M:MathDocFX.Math.Subtract(System.Int32,System.Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MathDocFX.Math.Multiply(System.Int32,System.Int32)
+  commentId: M:MathDocFX.Math.Multiply(System.Int32,System.Int32)
+  id: Multiply(System.Int32,System.Int32)
+  parent: MathDocFX.Math
+  langs:
+  - csharp
+  - vb
+  name: Multiply(Int32, Int32)
+  nameWithType: Math.Multiply(Int32, Int32)
+  fullName: MathDocFX.Math.Multiply(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: Multiply
+    path: C:\Users\Osnaider\source\repos\MathDocFX\MathDocFX\Math.cs
+    startLine: 202
+  assemblies:
+  - MathDocFX
+  namespace: MathDocFX
+  summary: "\nMultiplies two integers <code data-dev-comment-type=\"paramref\" class=\"paramref\">a</code> \nand <code data-dev-comment-type=\"paramref\" class=\"paramref\">b</code> and returns the result.\n"
+  example:
+  - "\n<pre><code>int c = Math.Multiply(4, 5);\nif (c > 100)\n{\n    Console.WriteLine(c);\n}</code></pre>\n"
+  syntax:
+    content: public static int Multiply(int a, int b)
+    parameters:
+    - id: a
+      type: System.Int32
+      description: An integer.
+    - id: b
+      type: System.Int32
+      description: An integer.
+    return:
+      type: System.Int32
+      description: "\nThe product of two integers.\n"
+    content.vb: Public Shared Function Multiply(a As Integer, b As Integer) As Integer
+  overload: MathDocFX.Math.Multiply*
+  seealso:
+  - linkId: MathDocFX.Math.Add(System.Int32,System.Int32)
+    commentId: M:MathDocFX.Math.Add(System.Int32,System.Int32)
+  - linkId: MathDocFX.Math.Subtract(System.Int32,System.Int32)
+    commentId: M:MathDocFX.Math.Subtract(System.Int32,System.Int32)
+  - linkId: MathDocFX.Math.Divide(System.Int32,System.Int32)
+    commentId: M:MathDocFX.Math.Divide(System.Int32,System.Int32)
+  see:
+  - linkId: MathDocFX.Math.Multiply(System.Double,System.Double)
+    commentId: M:MathDocFX.Math.Multiply(System.Double,System.Double)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MathDocFX.Math.Multiply(System.Double,System.Double)
+  commentId: M:MathDocFX.Math.Multiply(System.Double,System.Double)
+  id: Multiply(System.Double,System.Double)
+  parent: MathDocFX.Math
+  langs:
+  - csharp
+  - vb
+  name: Multiply(Double, Double)
+  nameWithType: Math.Multiply(Double, Double)
+  fullName: MathDocFX.Math.Multiply(System.Double, System.Double)
+  type: Method
+  source:
+    id: Multiply
+    path: C:\Users\Osnaider\source\repos\MathDocFX\MathDocFX\Math.cs
+    startLine: 230
+  assemblies:
+  - MathDocFX
+  namespace: MathDocFX
+  summary: "\nMultiplies two doubles <code data-dev-comment-type=\"paramref\" class=\"paramref\">a</code> and\n<code data-dev-comment-type=\"paramref\" class=\"paramref\">b</code> and returns the result.\n"
+  example:
+  - "\n<pre><code>double c = Math.Multiply(4.5, 5.4);\nif (c > 100.0)\n{\n    Console.WriteLine(c);\n}</code></pre>\n"
+  syntax:
+    content: public static double Multiply(double a, double b)
+    parameters:
+    - id: a
+      type: System.Double
+      description: A double precision number.
+    - id: b
+      type: System.Double
+      description: A double precision number.
+    return:
+      type: System.Double
+      description: "\nThe product of two doubles.\n"
+    content.vb: Public Shared Function Multiply(a As Double, b As Double) As Double
+  overload: MathDocFX.Math.Multiply*
+  seealso:
+  - linkId: MathDocFX.Math.Add(System.Double,System.Double)
+    commentId: M:MathDocFX.Math.Add(System.Double,System.Double)
+  - linkId: MathDocFX.Math.Subtract(System.Double,System.Double)
+    commentId: M:MathDocFX.Math.Subtract(System.Double,System.Double)
+  - linkId: MathDocFX.Math.Divide(System.Double,System.Double)
+    commentId: M:MathDocFX.Math.Divide(System.Double,System.Double)
+  see:
+  - linkId: MathDocFX.Math.Multiply(System.Int32,System.Int32)
+    commentId: M:MathDocFX.Math.Multiply(System.Int32,System.Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MathDocFX.Math.Divide(System.Int32,System.Int32)
+  commentId: M:MathDocFX.Math.Divide(System.Int32,System.Int32)
+  id: Divide(System.Int32,System.Int32)
+  parent: MathDocFX.Math
+  langs:
+  - csharp
+  - vb
+  name: Divide(Int32, Int32)
+  nameWithType: Math.Divide(Int32, Int32)
+  fullName: MathDocFX.Math.Divide(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: Divide
+    path: C:\Users\Osnaider\source\repos\MathDocFX\MathDocFX\Math.cs
+    startLine: 261
+  assemblies:
+  - MathDocFX
+  namespace: MathDocFX
+  summary: "\nDivides an integer <code data-dev-comment-type=\"paramref\" class=\"paramref\">a</code> by another\ninteger <code data-dev-comment-type=\"paramref\" class=\"paramref\">b</code> and returns the result.\n"
+  example:
+  - "\n<pre><code>int c = Math.Divide(4, 5);\nif (c > 1)\n{\n    Console.WriteLine(c);\n}</code></pre>\n"
+  syntax:
+    content: public static int Divide(int a, int b)
+    parameters:
+    - id: a
+      type: System.Int32
+      description: An integer dividend.
+    - id: b
+      type: System.Int32
+      description: An integer divisor.
+    return:
+      type: System.Int32
+      description: "\nThe quotient of two integers.\n"
+    content.vb: Public Shared Function Divide(a As Integer, b As Integer) As Integer
+  overload: MathDocFX.Math.Divide*
+  exceptions:
+  - type: System.DivideByZeroException
+    commentId: T:System.DivideByZeroException
+    description: "\nThrown when <code data-dev-comment-type=\"paramref\" class=\"paramref\">b</code> is equal to 0.\n"
+  seealso:
+  - linkId: MathDocFX.Math.Add(System.Int32,System.Int32)
+    commentId: M:MathDocFX.Math.Add(System.Int32,System.Int32)
+  - linkId: MathDocFX.Math.Subtract(System.Int32,System.Int32)
+    commentId: M:MathDocFX.Math.Subtract(System.Int32,System.Int32)
+  - linkId: MathDocFX.Math.Multiply(System.Int32,System.Int32)
+    commentId: M:MathDocFX.Math.Multiply(System.Int32,System.Int32)
+  see:
+  - linkId: MathDocFX.Math.Divide(System.Double,System.Double)
+    commentId: M:MathDocFX.Math.Divide(System.Double,System.Double)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MathDocFX.Math.Divide(System.Double,System.Double)
+  commentId: M:MathDocFX.Math.Divide(System.Double,System.Double)
+  id: Divide(System.Double,System.Double)
+  parent: MathDocFX.Math
+  langs:
+  - csharp
+  - vb
+  name: Divide(Double, Double)
+  nameWithType: Math.Divide(Double, Double)
+  fullName: MathDocFX.Math.Divide(System.Double, System.Double)
+  type: Method
+  source:
+    id: Divide
+    path: C:\Users\Osnaider\source\repos\MathDocFX\MathDocFX\Math.cs
+    startLine: 292
+  assemblies:
+  - MathDocFX
+  namespace: MathDocFX
+  summary: "\nDivides a double <code data-dev-comment-type=\"paramref\" class=\"paramref\">a</code> by another double\n<code data-dev-comment-type=\"paramref\" class=\"paramref\">b</code> and returns the result.\n"
+  example:
+  - "\n<pre><code>double c = Math.Divide(4.5, 5.4);\nif (c > 1.0)\n{\n    Console.WriteLine(c);\n}</code></pre>\n"
+  syntax:
+    content: public static double Divide(double a, double b)
+    parameters:
+    - id: a
+      type: System.Double
+      description: A double precision dividend.
+    - id: b
+      type: System.Double
+      description: A double precision divisor.
+    return:
+      type: System.Double
+      description: "\nThe quotient of two doubles.\n"
+    content.vb: Public Shared Function Divide(a As Double, b As Double) As Double
+  overload: MathDocFX.Math.Divide*
+  exceptions:
+  - type: System.DivideByZeroException
+    commentId: T:System.DivideByZeroException
+    description: "\nThrown when <code data-dev-comment-type=\"paramref\" class=\"paramref\">b</code> is equal to 0.\n"
+  seealso:
+  - linkId: MathDocFX.Math.Add(System.Double,System.Double)
+    commentId: M:MathDocFX.Math.Add(System.Double,System.Double)
+  - linkId: MathDocFX.Math.Subtract(System.Double,System.Double)
+    commentId: M:MathDocFX.Math.Subtract(System.Double,System.Double)
+  - linkId: MathDocFX.Math.Multiply(System.Double,System.Double)
+    commentId: M:MathDocFX.Math.Multiply(System.Double,System.Double)
+  see:
+  - linkId: MathDocFX.Math.Divide(System.Int32,System.Int32)
+    commentId: M:MathDocFX.Math.Divide(System.Int32,System.Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: MathDocFX
+  commentId: N:MathDocFX
+  name: MathDocFX
+  nameWithType: MathDocFX
+  fullName: MathDocFX
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32.MaxValue
+  commentId: F:System.Int32.MaxValue
+  isExternal: true
+- uid: MathDocFX.Math.Add(System.Double,System.Double)
+  commentId: M:MathDocFX.Math.Add(System.Double,System.Double)
+  isExternal: true
+- uid: MathDocFX.Math.Subtract(System.Int32,System.Int32)
+  commentId: M:MathDocFX.Math.Subtract(System.Int32,System.Int32)
+  isExternal: true
+- uid: MathDocFX.Math.Multiply(System.Int32,System.Int32)
+  commentId: M:MathDocFX.Math.Multiply(System.Int32,System.Int32)
+  isExternal: true
+- uid: MathDocFX.Math.Divide(System.Int32,System.Int32)
+  commentId: M:MathDocFX.Math.Divide(System.Int32,System.Int32)
+  isExternal: true
+- uid: System.OverflowException
+  commentId: T:System.OverflowException
+  isExternal: true
+- uid: MathDocFX.Math.Add*
+  commentId: Overload:MathDocFX.Math.Add
+  name: Add
+  nameWithType: Math.Add
+  fullName: MathDocFX.Math.Add
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: MathDocFX.Math.Add(System.Int32,System.Int32)
+  commentId: M:MathDocFX.Math.Add(System.Int32,System.Int32)
+  isExternal: true
+- uid: MathDocFX.Math.Subtract(System.Double,System.Double)
+  commentId: M:MathDocFX.Math.Subtract(System.Double,System.Double)
+  isExternal: true
+- uid: MathDocFX.Math.Multiply(System.Double,System.Double)
+  commentId: M:MathDocFX.Math.Multiply(System.Double,System.Double)
+  isExternal: true
+- uid: MathDocFX.Math.Divide(System.Double,System.Double)
+  commentId: M:MathDocFX.Math.Divide(System.Double,System.Double)
+  isExternal: true
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: MathDocFX.Math.Subtract*
+  commentId: Overload:MathDocFX.Math.Subtract
+  name: Subtract
+  nameWithType: Math.Subtract
+  fullName: MathDocFX.Math.Subtract
+- uid: MathDocFX.Math.Multiply*
+  commentId: Overload:MathDocFX.Math.Multiply
+  name: Multiply
+  nameWithType: Math.Multiply
+  fullName: MathDocFX.Math.Multiply
+- uid: System.DivideByZeroException
+  commentId: T:System.DivideByZeroException
+  isExternal: true
+- uid: MathDocFX.Math.Divide*
+  commentId: Overload:MathDocFX.Math.Divide
+  name: Divide
+  nameWithType: Math.Divide
+  fullName: MathDocFX.Math.Divide
